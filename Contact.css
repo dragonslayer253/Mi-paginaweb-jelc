@@ -16,6 +16,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: block;
 }
 
 h1 {
@@ -33,7 +34,6 @@ nav {
     background-color: rgba(231, 226, 226, 0.1);
     color: #fff;
     padding: 10px 0;
-    display: block;
 }
 
 nav ul {
