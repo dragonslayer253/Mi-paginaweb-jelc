@@ -23,7 +23,7 @@ body {
 h1 {
     font-size: 40px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 20px;
 }
 
@@ -133,7 +133,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
     flex-direction: row;
 }
 
@@ -170,9 +170,12 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: -10px;
     text-decoration: none;
     color: white;
+    margin-left: -200;
+
+
 }
 
 .logo-gmail {
