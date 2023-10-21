@@ -23,9 +23,10 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-   background-color: rgba(231, 226, 226, 0.1);
+    background-color: rgba(231, 226, 226, 0.1);
     color: #fff;
     padding: 5px 0;
+    z-index: 9999;
 }
 
 nav ul {
@@ -54,7 +55,7 @@ nav ul li:hover {
     color: #fff;
 }
 
-nav ul li > ul {
+nav ul li>ul {
     display: none;
     list-style: none;
     padding: 0;
@@ -68,7 +69,7 @@ nav ul li > ul {
     min-width: 150px;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
     display: flex;
     flex-direction: column;
 }
@@ -110,11 +111,12 @@ header button:hover {
     color: black;
     cursor: pointer;
 }
+
 header button img {
-    width: 20px; /* Ajusta el ancho de la flecha según tus necesidades */
-    height: auto; /* Mantiene las proporciones de la imagen */
-    vertical-align: middle; /* Alinea verticalmente la imagen en el centro del botón */
-    margin-left: 5px; /* Ajusta el margen izquierdo para desplazar la flecha hacia la derecha */
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;/
 }
 
 .mi-contenedor {
@@ -127,50 +129,30 @@ header button img {
 
 .mi-contenedor a {
     display: inline-block;
-    margin: 0 10px; /* Ajusta el valor de margen según tus necesidades */
-    width: 80px; /* Ajusta el ancho según tus necesidades */
-    height: auto; /* Ajusta la altura según tus necesidades */
+    margin: 0 10px;
+    width: 80px;
+    height: auto;
     animation: latido 1s infinite;
 }
 
 .mi-contenedor a img {
-    width: 100%; /* 100% del contenedor */
-    height: 100%; /* 100% del contenedor */
-    object-fit: cover; /* Mantiene las proporciones y recorta las imágenes si es necesario */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @keyframes latido {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(231, 226, 226, 0.1);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Share Tech', sans-serif;
-}
-
-.containeris {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-p {
-    font-size: 16px;
-    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -195,7 +177,7 @@ p {
     }
 
     nav ul li a img.logo {
-        max-width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+        max-width: 50px;
     }
 
     nav ul li .submenu {
@@ -216,33 +198,33 @@ p {
     header h1 {
         font-size: 60px;
         margin-bottom: 10px;
-        margin-top:-60px; /* Ajusta el margen superior del h1 */
+        margin-top: -60px;
     }
 
     header h2 {
         font-size: 40px;
         margin-bottom: 10px;
-        margin-top: 5px; /* Ajusta el margen superior del h2 */
+        margin-top: 5px;
     }
 
     header p {
         font-size: 30px;
-        margin-bottom: 20px; /* Ajusta el margen inferior del párrafo */
-        margin-top: 20px; /* Ajusta el margen superior del párrafo */
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .mi-contenedor {
         flex-direction: row;
-        margin-top: 5px; /* Ajusta el margen superior del contenedor de imágenes */
-        margin-bottom: 20px; /* Añade un margen inferior para evitar la superposición con el footer */
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
 
     .mi-contenedor a {
-        margin: 5px 10px; /* Ajusta el margen vertical y horizontal de las imágenes */
-        width: 50px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+        margin: 5px 10px;
+        width: 50px;
     }
 
     .mi-contenedor a:not(:last-child) {
-        margin-right: 10px; /* Ajusta el margen horizontal entre las imágenes */
+        margin-right: 10px;
     }
-} 
+}

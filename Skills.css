@@ -55,7 +55,7 @@ nav ul li:hover {
     color: #fff;
 }
 
-nav ul li > ul {
+nav ul li>ul {
     display: none;
     list-style: none;
     padding: 0;
@@ -69,7 +69,7 @@ nav ul li > ul {
     min-width: 150px;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
     display: flex;
     flex-direction: column;
 }
@@ -118,33 +118,35 @@ header button img {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-    margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
+    margin-right: 20px;
 }
 
 .image-container div img {
-    width: 100px; /* Tamaño de las imágenes para pantallas menores a 768px */
-    height: 100px; /* Tamaño de las imágenes para pantallas menores a 768px */
-    object-fit: cover; /* Mantiene las proporciones y recorta las imágenes para que encajen en el contenedor */
-    animation: latido 1s infinite; /* Aplica la animación a cada imagen */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    animation: latido 1s infinite;
 }
 
 .image-container div p {
-    margin-top: 5px; /* Ajusta el margen superior según tus necesidades */
+    margin-top: 5px;
 }
 
 @keyframes latido {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
 }
 
-/* Estilos generales para el menú desplegable */
+
 @media screen and (max-width: 768px) {
     nav {
         position: sticky;
@@ -209,7 +211,7 @@ header button img {
     }
 
     .image-container div img {
-        width: 30px; /* Ajusta el tamaño de las imágenes para pantallas menores a 768px */
-        height: 30px; /* Ajusta el tamaño de las imágenes para pantallas menores a 768px */
+        width: 30px;
+        height: 30px;
     }
 }

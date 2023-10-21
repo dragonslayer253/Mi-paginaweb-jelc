@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -18,12 +17,14 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
 h1 {
     font-size: 40px;
     text-align: center;
-    margin-top: 100px; /* Ajusta la distancia desde la parte superior del formulario */
+    margin-top: 100px;
     margin-bottom: 20px;
 }
+
 nav {
     width: 100%;
     position: fixed;
@@ -32,7 +33,7 @@ nav {
     background-color: rgba(231, 226, 226, 0.1);
     color: #fff;
     padding: 10px 0;
-    z-index: 100;
+    display: block;
 }
 
 nav ul {
@@ -68,17 +69,17 @@ header h1 {
 }
 
 .contact-form {
-        margin-top: 100px;
-        padding: 20px; /* Ajusta el espaciado interno del formulario según tus necesidades */
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid white; /* Borde blanco alrededor del formulario */
-        border-radius: 10px; /* Bordes redondeados del formulario */
-        background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente del formulario */
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 
 }
 
@@ -90,10 +91,10 @@ header h1 {
     font-size: 18px;
     margin-bottom: 10px;
     display: block;
-    background-color: black; /* Fondo blanco para el label */
-    padding: 5px 10px; /* Espaciado interno del label */
-    border: 1px solid white; /* Borde alrededor del label */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: black;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .form-group input,
@@ -145,17 +146,21 @@ button:hover {
     height: 100%;
     object-fit: cover;
 }
+
 @keyframes latido {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
 }
+
 .correo-container {
     display: flex;
     align-items: center;
@@ -175,7 +180,6 @@ button:hover {
     font-size: 16px;
 }
 
-/* Estilos para pantallas de 768 píxeles y menos */
 @media screen and (max-width: 768px) {
     nav {
         z-index: 1;
@@ -221,7 +225,7 @@ button:hover {
     .container h1 {
         font-size: 40px;
         margin-bottom: 10px;
-        margin-top: 200px; /* Ajusta la distancia desde la parte superior de la ventana */
+        margin-top: 200px;
     }
 
     .mi-contenedor {
@@ -235,7 +239,7 @@ button:hover {
     }
 
     .contact-form {
-        margin-top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
+        margin-top: 20px;
         padding: 20px;
         max-width: 400px;
         margin-left: auto;
