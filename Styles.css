@@ -172,70 +172,7 @@ p {
     font-size: 16px;
     margin-bottom: 10px;
 }
-/* Estilos generales para el menú desplegable */
-@media screen and (max-width: 768px) {
-    nav {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background-color: rgba(231, 226, 226, 0.1);
-    }
 
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-        width: 100%;
-        font-size: 120%;
-        position: relative;
-    }
-
-    nav ul li a img.logo {
-        max-width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
-    }
-
-    nav ul li .submenu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: rgba(231, 226, 226, 0.1);
-        padding: 10px;
-        border-radius: 5px;
-        min-width: 150px;
-    }
-
-    nav ul li:hover .submenu {
-        display: block;
-    }
-
-    header h1 {
-        font-size: 60px;
-        margin-bottom: 10px;
-        margin-top: 20px; /* Ajusta el margen superior del h1 */
-    }
-
-    header h2 {
-        font-size: 40px;
-        margin-bottom: 10px;
-        margin-top: 10px; /* Ajusta el margen superior del h2 */
-    }
-
-    header h3 {
-        font-size: 30px;
-        margin-bottom: 10px;
-        margin-top: 10px; /* Ajusta el margen superior del h3 */
-    }
-
-    header button {
-        font-size: 16px; /* Ajusta el tamaño del texto del botón */
-        margin-top: 10px; /* Ajusta el margen superior del botón */
-    }
-/* Estilos generales para el menú desplegable */
 @media screen and (max-width: 768px) {
     nav {
         position: sticky;
@@ -309,4 +246,3 @@ p {
         margin-right: 10px; /* Ajusta el margen horizontal entre las imágenes */
     }
 } 
-}
