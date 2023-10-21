@@ -183,7 +183,12 @@ button:hover {
 .correo {
     font-size: 16px;
 }
-
+@media screen and (min-width: 769px) {
+    nav {
+        position: fixed;
+        top: 0;
+    }
+}
 @media screen and (max-width: 768px) {
     nav {
         z-index: 1;
