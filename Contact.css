@@ -1,0 +1,254 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px; /* Ajusta la distancia desde la parte superior del formulario */
+    margin-bottom: 20px;
+}
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(231, 226, 226, 0.1);
+    color: #fff;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 150%;
+    font-family: 'Share Tech', sans-serif;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+        margin-top: 100px;
+        padding: 20px; /* Ajusta el espaciado interno del formulario según tus necesidades */
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid white; /* Borde blanco alrededor del formulario */
+        border-radius: 10px; /* Bordes redondeados del formulario */
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente del formulario */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: black; /* Fondo blanco para el label */
+    padding: 5px 10px; /* Espaciado interno del label */
+    border: 1px solid white; /* Borde alrededor del label */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+button {
+    background-color: #22223b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00b4d8;
+}
+
+.mi-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.mi-contenedor a {
+    display: inline-block;
+    margin: 5px 0;
+    width: 50px;
+    height: 50px;
+    animation: latido 1s infinite;
+    overflow: hidden;
+}
+
+.mi-contenedor a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.correo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-gmail {
+    max-width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.correo {
+    font-size: 16px;
+}
+
+/* Estilos para pantallas de 768 píxeles y menos */
+@media screen and (max-width: 768px) {
+    nav {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(231, 226, 226, 0.1);
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 120%;
+        position: relative;
+    }
+
+    nav ul li a img.logo {
+        max-width: 50px;
+    }
+
+    nav ul li .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(231, 226, 226, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 150px;
+    }
+
+    nav ul li:hover .submenu {
+        display: block;
+    }
+
+    .container h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-top: 200px; /* Ajusta la distancia desde la parte superior de la ventana */
+    }
+
+    .mi-contenedor {
+        margin-top: 10px;
+    }
+
+    .mi-contenedor a {
+        margin: 5px 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-form {
+        margin-top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
+        padding: 20px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group button {
+        width: 100%;
+    }
+
+    .correo-container {
+        margin-top: 20px;
+    }
+}

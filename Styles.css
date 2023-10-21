@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+   background-color: rgba(231, 226, 226, 0.1);
+    color: #fff;
+    padding: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 150%;
+    font-family: 'Share Tech', sans-serif;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    border-radius: 30px;
+    background-color: #00b4d8;
+    color: #fff;
+}
+
+nav ul li > ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(231, 226, 226, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+header h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+header button {
+    background-color: #22223b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+header button img {
+    width: 20px; /* Ajusta el ancho de la flecha según tus necesidades */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    vertical-align: middle; /* Alinea verticalmente la imagen en el centro del botón */
+    margin-left: 5px; /* Ajusta el margen izquierdo para desplazar la flecha hacia la derecha */
+}
+
+.mi-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.mi-contenedor a {
+    display: inline-block;
+    margin: 0 10px; /* Ajusta el valor de margen según tus necesidades */
+    width: 80px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Ajusta la altura según tus necesidades */
+    animation: latido 1s infinite;
+}
+
+.mi-contenedor a img {
+    width: 100%; /* 100% del contenedor */
+    height: 100%; /* 100% del contenedor */
+    object-fit: cover; /* Mantiene las proporciones y recorta las imágenes si es necesario */
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(231, 226, 226, 0.1);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.containeris {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/* Estilos generales para el menú desplegable */
+@media screen and (max-width: 768px) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: rgba(231, 226, 226, 0.1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 120%;
+        position: relative;
+    }
+
+    nav ul li a img.logo {
+        max-width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+    }
+
+    nav ul li .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(231, 226, 226, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 150px;
+    }
+
+    nav ul li:hover .submenu {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+        margin-top: 20px; /* Ajusta el margen superior del h1 */
+    }
+
+    header h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px; /* Ajusta el margen superior del h2 */
+    }
+
+    header h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px; /* Ajusta el margen superior del h3 */
+    }
+
+    header button {
+        font-size: 16px; /* Ajusta el tamaño del texto del botón */
+        margin-top: 10px; /* Ajusta el margen superior del botón */
+    }
+/* Estilos generales para el menú desplegable */
+@media screen and (max-width: 768px) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: rgba(231, 226, 226, 0.1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 120%;
+        position: relative;
+    }
+
+    nav ul li a img.logo {
+        max-width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+    }
+
+    nav ul li .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(231, 226, 226, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 150px;
+    }
+
+    nav ul li:hover .submenu {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+        margin-top:-60px; /* Ajusta el margen superior del h1 */
+    }
+
+    header h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-top: 5px; /* Ajusta el margen superior del h2 */
+    }
+
+    header p {
+        font-size: 30px;
+        margin-bottom: 20px; /* Ajusta el margen inferior del párrafo */
+        margin-top: 20px; /* Ajusta el margen superior del párrafo */
+    }
+
+    .mi-contenedor {
+        flex-direction: row;
+        margin-top: 5px; /* Ajusta el margen superior del contenedor de imágenes */
+        margin-bottom: 20px; /* Añade un margen inferior para evitar la superposición con el footer */
+    }
+
+    .mi-contenedor a {
+        margin: 5px 10px; /* Ajusta el margen vertical y horizontal de las imágenes */
+        width: 50px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    }
+
+    .mi-contenedor a:not(:last-child) {
+        margin-right: 10px; /* Ajusta el margen horizontal entre las imágenes */
+    }
+} 
+}

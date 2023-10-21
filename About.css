@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:black; /* Fondo principal en negro */
+    color: #fff;
+    font-size: 16px;
+}
+.contenido img {
+    width: 20%; /* Ajusta el ancho de la imagen al 80% del contenedor */
+    max-width: 20%; /* Establece un ancho máximo para la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    display: block; /* Elimina espacios en blanco debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+    margin-top: 50px; /* Ajusta el margen superior de la imagen */
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(231, 226, 226, 0.1); /* Fondo del navbar con el color especificado */
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 150%;
+    font-family: 'Share Tech', sans-serif;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+header {
+    text-align: center;
+    margin-top: 100px;
+    padding: 40px 0; /* Ajuste para dispositivos móviles */
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 15%;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+section#certificados {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0; /* Ajuste para dispositivos móviles */
+}
+
+section#certificados h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+section#certificados p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+section#certificados a {
+    color: #00b4d8;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+section#certificados a:hover {
+    text-decoration: underline;
+}
+
+#certificados {
+    margin-top: 10px;
+}
+
+#certificados h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#certificados div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#certificados img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+#certificados a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 'Share Tech', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .contenido img {
+        width: 45%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        max-width: 100%; /* Establece un ancho máximo para la imagen */
+        height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+        display: block; /* Elimina espacios en blanco debajo de la imagen */
+        margin: 0 auto; /* Centra la imagen dentro del contenedor */
+        margin-top: 30px; /* Ajusta el margen superior de la imagen */
+    }
+    
+    
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: rgba(231, 226, 226, 0.1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 120%;
+        position: relative;
+    }
+
+    nav ul li a img.logo {
+        max-width: 50px;
+    }
+
+    nav ul li .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(231, 226, 226, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 150px;
+    }
+
+    nav ul li:hover .submenu {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+        margin-top: 60px;
+    }
+
+    header h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    header p {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #certificados div {
+        flex-direction: column;
+    }
+
+    #certificados img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

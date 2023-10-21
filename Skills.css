@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(231, 226, 226, 0.1);
+    color: #fff;
+    padding: 5px 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 150%;
+    font-family: 'Share Tech', sans-serif;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    border-radius: 30px;
+    background-color: #00b4d8;
+    color: #fff;
+}
+
+nav ul li > ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(231, 226, 226, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+header h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header button img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.image-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
+}
+
+.image-container div img {
+    width: 100px; /* Tamaño de las imágenes para pantallas menores a 768px */
+    height: 100px; /* Tamaño de las imágenes para pantallas menores a 768px */
+    object-fit: cover; /* Mantiene las proporciones y recorta las imágenes para que encajen en el contenedor */
+    animation: latido 1s infinite; /* Aplica la animación a cada imagen */
+}
+
+.image-container div p {
+    margin-top: 5px; /* Ajusta el margen superior según tus necesidades */
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos generales para el menú desplegable */
+@media screen and (max-width: 768px) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: rgba(231, 226, 226, 0.1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 120%;
+        position: relative;
+    }
+
+    nav ul li a img.logo {
+        max-width: 50px;
+    }
+
+    nav ul li .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(231, 226, 226, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 150px;
+    }
+
+    nav ul li:hover .submenu {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    header h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    header button {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .image-container div img {
+        width: 30px; /* Ajusta el tamaño de las imágenes para pantallas menores a 768px */
+        height: 30px; /* Ajusta el tamaño de las imágenes para pantallas menores a 768px */
+    }
+}
